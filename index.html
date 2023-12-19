@@ -11,13 +11,19 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1> Hoja de vida </h1>
-        <p> Willian Alejandro Rueda Quiroga </p>
-        <p> Desarrollador Full-stack (Java- Angular) </p>
+    <header class="header">
+        <section class="container header-contain">
+                <div class="column relevant-information">
+                    <h1> Willian Alejandro Rueda Quiroga </h1>
+                    <p> Desarrollador Full-stack (Java- Angular) </p>
+                </div>
+                <div class="column">
+                    <img src="/img/photo.jpeg" alt="Foto de Perfil">
+                </div>
+        </section>   
     </header>
 
-    <main>
+    <main class="container">
         <section>
             <h2>Perfil</h2>
             <p>Soy un apasionado por el sector TI, actualmente cuento con el cargo de soporte en la Red de Investigaciones de tecnología avanzada de la Universidad Distrital, aqui entre mis tareas mas destacadas esta el apoyo en el desarrollo de modulos de software para fortalecer las plataformas dentro de la universidad. Adicionalmente, tengo conocimientos sobre infraestructura en la nube, metodologías ágiles y cultura DevOps. Actualmente me estoy formando como desarrollador web con Oracle y administrador de la nube de Azure con la Universidad de los Andes.</p>
@@ -59,6 +65,18 @@
                 <li>Css</li>
                 <li>Javascript</li>
             </ul>
+        </section>
+        <section>
+            <h2>Formulario de contacto</h2>
+            <form action="#" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user_email">
+             
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="user_message"></textarea>
+             
+                <input type="submit" value="Contactar">
+             </form>             
         </section>
         <footer>
             <p>Contacto: correo.willianrueda@gmail.com | Telefono: 3015143981</p>
